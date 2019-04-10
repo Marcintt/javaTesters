@@ -9,7 +9,7 @@ public class Main {
         long duzaLiczba = 1234;
         float innaLiczba = 12345.5f;
         double najwiekszaLiczba = 123456.5;
-        String
+        String newString = "example";
         System.out.println(pojedynczyZnak);
         System.out.println(liczba);
 

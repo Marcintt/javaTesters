@@ -11,11 +11,11 @@ public class Main {
         double najwiekszaLiczba = 123456.5;
         String newString = "example";
         System.out.println(pojedynczyZnak);
-        System.out.println(liczba);
+        System.out.println(liczba)
 
     }
     //1. W ramach testów zadeklaruj po jednej zmiennej typów: boolean, char, int, long, float, dobule, String,
-    // oraz wypisz je na konsolę.
+    // oraz wypisz je na konsolę.xxx
 
 
 }

@@ -1,19 +1,18 @@
+import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Zad1();
-        Zad2();
-        Zad3();
-        System.out.println("Hello World!");
+        Zadanie1();
+        Zadadanie2();
+        zadanie3();
+        Zadanie4();
+        zadanie1Cz2();
+        zadanie2Cz2();
 
-
-
-
-
-
+        //System.out.println("Hello World!");
     }
 
-    public static void Zad1() {
+    public static void Zadanie1() {
         //1. W ramach testów zadeklaruj po jednej zmiennej typów: boolean, char, int, long, float, dobule, String,
         // oraz wypisz je na konsolę.
         boolean zmiennaBoolean = true;
@@ -31,7 +30,7 @@ public class Main {
         System.out.println(newString);
     }
 
-    public static void Zad2(){
+    public static void Zadadanie2(){
         //2. Zadeklaruj dwie zmienne liczbowe, oraz wypisz na ekran wyniki kilku podstawowych działań które można na nich wykonać (+, -, *, /, %).
 
         int liczba1 = 12;
@@ -49,18 +48,73 @@ public class Main {
         System.out.println(dzielenie);
         System.out.println(modulo);
     }
-    public static void Zad3(){
-        //3. Napisz program służący do konwersji wartości temperatury podanej w stopniach Celsjusza na stopnie w
-        // skali Fahrenheita oraz odwrotnie (stopnie Fahrenheita = 1.8 * stopnie Celsjusza + 32.0). Dane które mamy
-        // skonwertować umieszczamy na początku programu w zmiennych (np. double stopnieC, oraz double stopnieF).
+    public static void zadanie3(){
+        //Napisz program służący do konwersji wartości temperatury podanej w stopniach Celsjusza na stopnie w
+        // skali Fahrenheita oraz odwrotnie (stopnie Fahrenheita = 1.8 * stopnie Celsjusza + 32.0). Dane które
+        // mamy skonwertować umieszczamy na początku programu w zmiennych (np. double stopnieC, oraz double stopnieF).
 
         double stopnieC = 100;
-        double stopnieF = 100;
-        stopnie1 =
-                stopnie2 =
+        double stopnieF = 212;
+
+        double konwersjaZFDoC = 1.8 * stopnieC +32.0;
+        double konwersjazCDoF = (stopnieF - 32.0)/1.8;
+        System.out.println("stopnie faranfaita = " + konwersjaZFDoC);
+        System.out.println("stopnie Celcjusza = " + konwersjazCDoF);
+
     }
 
+    public static void Zadanie4(){
+        int liczba = 4434;
+        String str1 = Integer.toString(liczba);
+        String[] parts = str1.split("");
+        System.out.println(Arrays.toString(parts));
+        String a_str = parts[0];
+        String b_str = parts[1];
+        String c_str = parts[2];
+        String d_str = parts[3];
 
+        int a_int = Integer.parseInt(a_str);
+        int b_int = Integer.parseInt(b_str);
+        int c_int = Integer.parseInt(c_str);
+        int d_int = Integer.parseInt(d_str);
+
+        //int suma = a_int + b_int + c_int + d_int;
+        //double srednia = (a_int + b_int + c_int + d_int)/4.0f;
+        System.out.println("suma = " + (a_int + b_int + c_int + d_int));
+        System.out.println("Srednia = " + ((a_int + b_int + c_int + d_int)/4.0f));
+
+    }
+
+    public static void zadanie1Cz2(){
+        int a = 20;
+        int b = 5;
+        int c = 12;
+
+        //int tablica[] = new int[3];
+        int[] tablica = new int[]{a,b,c};
+        System.out.println(Arrays.toString(tablica));
+        Arrays.sort(tablica);
+        System.out.println(Arrays.toString(tablica));
+        System.out.println("min = " + tablica[0]);
+        System.out.println("max = " + tablica[2]);
+    }
+
+    public static void zadanie2Cz2(){
+        double wzrost = 1.75;
+        double waga = 50;
+        double wspolczynnik = waga / (wzrost*wzrost);
+        System.out.println(wspolczynnik);
+
+        if (wspolczynnik < 18.5) {
+            System.out.println("Niedowaga");
+        }
+        else if ((wspolczynnik >= 18.5) && (wspolczynnik <= 24.9)){
+            System.out.println("Waga prawidłowa");
+        }
+        else{
+            System.out.println("Nadwaga");
+        }
+    }
 }
 
 

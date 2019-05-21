@@ -1,3 +1,5 @@
+import zajecia4.Ksiazka;
+
 import java.util.Arrays;
 public class Main {
 
@@ -8,6 +10,7 @@ public class Main {
         Zadanie4();
         Zadanie1Cz2();
         Zadanie2Cz2();
+        ksiazka();
 
         //System.out.println("Hello World!");
     }
@@ -125,6 +128,21 @@ public class Main {
         }
         System.out.println("");
     }
+
+    public static void ksiazka(){
+//        Czlowiek michal = new Czlowiek("Michal", "S");
+//        Czlowiek marcin = new Czlowiek();
+//        marcin.przedstawSie();
+//        michal.przedstawSie();
+        Ksiazka jakasKsiazka = new Ksiazka("tyutul ksiazki", "ads", 50);
+        jakasKsiazka.coToZaKsiazka();
+    }
+//    public static void main (String[] args){
+//        Pokoj maczupikczu = new Pokoj();
+//        maczupikczu.setIloscOkien(4);
+//        System.out.println(maczupikczu.getIloscOkien());
+
+//    }
 }
 
 
